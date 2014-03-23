@@ -1,6 +1,7 @@
 package demo;
 
 import java.util.Iterator;
+import java.util.Map;
 
 public interface ShoppingCart {
 
@@ -12,6 +13,6 @@ public interface ShoppingCart {
 
 	public int get(Item i);
 
-	public Iterator<Entry> iterator();
+	public Iterator<Map.Entry<Item,Integer>> iterator();
 
 }
