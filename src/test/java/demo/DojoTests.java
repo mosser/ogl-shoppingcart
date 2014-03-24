@@ -4,6 +4,7 @@ package demo;
 import org.junit.After;
 import static org.junit.Assert.*;
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -27,5 +28,9 @@ public class DojoTests {
 		nonEmptyCart = null;
 	}
 
+	@Test
+	public void testTheTruthIsTheTruth() {
+		assertTrue(true);
+	}
 
 }
