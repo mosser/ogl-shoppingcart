@@ -33,4 +33,30 @@ public class DojoTests {
 		assertTrue(true);
 	}
 
+	@Test
+	public void testTailleDuPanier() {
+		assertEquals(emptyCart.size(),0);
+		assertEquals(nonEmptyCart.size(), 7) ;
+
+	}
+
+	@Test
+	public void testSuppression() {
+		nonEmptyCart.delete(Main.MOVIE, 3);
+		assertEquals(nonEmptyCart.size(), 4);
+	}
+
+	@Test
+	public void testTropDeSuppression() {
+		nonEmptyCart.delete(Main.MOVIE, 30);
+		assertEquals(2, nonEmptyCart.size());
+	}
+
+	@Test
+	public void testSuppressionPanierVide() {
+		emptyCart.delete(Main.BOOK, 1);
+
+	}
+
+
 }

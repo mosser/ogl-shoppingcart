@@ -18,8 +18,9 @@ public class ShoppingCartImpl implements ShoppingCart {
 
 	@Override
 	public void delete(Item i, int quantity) {
-		contents.put(i, contents.get(i) - quantity);
-		size -= quantity;
+		int q = Math.min(quantity, get(i));
+		contents.put(i, contents.get(i) - q);
+		size -= q;
 	}
 
 	@Override
