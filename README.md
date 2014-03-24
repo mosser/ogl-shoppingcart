@@ -30,6 +30,6 @@ Thanks to Benjamin Benni who logged the test cases during the session.
   - get an item on the empty cart
 
 ### Tests SIZE
-    - ~~size(empty) must be equals to zero~~
-    - ~~size must change w.r.t. adds and deletions~~
-    - check the size whan adds or deletions trigger errors
+  - ~~size(empty) must be equals to zero~~
+  - ~~size must change w.r.t. adds and deletions~~
+  - check the size whan adds or deletions trigger errors
